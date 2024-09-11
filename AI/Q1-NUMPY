@@ -1,0 +1,45 @@
+
+Student	Height	Weight	Age	Avg Grade	Courses
+Student 1	170	65	19	85		5
+Student 2	180	75	20	90		6
+Student 3	160	55	18	80		4
+Student 4	175	70	21	88		7
+Student 5	155	50	19	82		5
+Student 6	165	62	22	89		6
+Student 7	178	80	23	91		7
+Student 8	162	58	20	78		3
+Student 9	172	68	19	86		5
+Student 10	169	66	20	84		4
+Student 11	171	64	22	87		6
+Student 12	177	72	21	90		9
+Student 13	174	76	24	88		8
+Student 14	158	52	18	75		3
+Student 15	164	63	19	81		4
+
+[ ]
+a = np.mean(data[:,0])
+print(f"Average Height:{a}")
+Average Height:168.66666666666666
+Double-click (or enter) to edit
+
+
+[ ]
+a = np.max(data[0,2])
+print(f"Age of the Oldest Student:{a}")
+Age of the Oldest Student:19
+
+[ ]
+c = np.max(data[:,4])
+d = np.where(data[:,4]==c)[0]
+print(d+1)
+[12]
+
+[ ]
+a = np.sum(data[:,3]>85)
+print(f"Number of Students with an AverageGrade Above 85:{a}")
+Number of Students with an AverageGrade Above 85:8
+
+[ ]
+a = np.sum(data[:,2]/data[:,3])
+print(f"Ratio of Age to Average Grade for each Sudent:{a}")
+Ratio of Age to Average Grade for each Sudent:3.5899713762568695
